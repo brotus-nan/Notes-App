@@ -5,17 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88c10b81-78c7-4cd8-856d-737f222c3aef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/helpers/users_helper.rb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/notes/new.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/notes/show.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/views/users/index.html.erb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test/controllers/users_controller_test.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/notes/_form.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/notes/edit.html.erb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/initializers/simple_form.rb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/locales/simple_form.en.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/templates/erb/scaffold/_form.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Notes-App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Notes-App.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/controllers/notes_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/notes_controller.rb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/javascript/controllers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/controllers/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/note.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/note.rb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/views/notes/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/notes/index.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/notes/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/notes/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/notes/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/notes/show.html.erb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/routes.rb" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.rb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -173,7 +176,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704882057339</updated>
       <workItem from="1704882058745" duration="1303000" />
-      <workItem from="1704883378211" duration="7887000" />
+      <workItem from="1704883378211" duration="14635000" />
     </task>
     <servers />
   </component>

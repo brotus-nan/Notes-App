@@ -1,12 +1,12 @@
-<h1>Notes</h1>
-<p>Here are the notes: </p>
+<h1><%= link_to "See Notes", notes_path(show_notes: !@show_notes) %></h1>
+<h1><%= link_to "See Archived Notes", notes_path(show_archived_notes: !@show_archived_notes) %></h1>
+<h1><%= link_to "See Deleted Notes", notes_path(show_deleted_notes: !@show_deleted_notes) %></h1>
 
 <ul>
   <% @notes.each do |note| %>
-    <li>
-      <%= link_to note.title, note %>
-    </li>
+    <li><%= link_to note.title, note %></li>
   <% end %>
 </ul>
+
 
 <%= link_to "New Note", new_note_path %>

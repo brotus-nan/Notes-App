@@ -4,8 +4,6 @@
 
   <%= form.input :content, as: :text %>
 
-  <%= form.association :user, collection: User.all, label_method: :name, value_method: :id, include_blank: 'Select User' %>
-
   <%= form.button :submit %>
 
 <% end %>

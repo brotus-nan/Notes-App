@@ -25,6 +25,7 @@ class NotesController < ApplicationController
 
   def create
     @note = Note.new(note_params)
+    @note.user_id = Current.user.id
     if @note.save
       redirect_to @note
     else

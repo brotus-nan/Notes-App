@@ -1,19 +1,22 @@
-<h1><%= @note.title %></h1>
-<p><%= @note.content %></p>
+<body class="gradient-custom" style="height: 100vh">
+ <div class="container d-flex flex-column align-items-center justify-content-center h-100">
+   <h1><u><%= @note.title %></u></h1>
+   <p><%= @note.content %></p>
 
-<button>
-  <%= link_to "Edit", edit_note_path(@note) %>
-</button>
+   <div class="d-flex gap-3">
+     <%= link_to "Edit", edit_note_path(@note), class: "btn create-note-button" %>
 
+     <% unless @note.status == $valid_statuses[:archived]%>
+       <%= simple_form_for @note, url: archive_note_path(@note), method: :put do |f| %>
+         <%= f.button :submit, 'Archive Note', class: "btn create-note-button" %>
+       <% end %>
+     <% end %>
 
-<% unless @note.status == $valid_statuses[:archived]%>
-  <%= simple_form_for @note, url: archive_note_path(@note), method: :put do |f| %>
-    <%= f.button :submit, 'Archive Note' %>
-  <% end %>
-<% end %>
-
-<% unless @note.status == $valid_statuses[:deleted]%>
-  <%= simple_form_for @note, url: delete_note_path(@note), method: :put do |f| %>
-    <%= f.button :submit, 'Delete note' %>
-  <% end %>
-<% end %>
+     <% unless @note.status == $valid_statuses[:deleted]%>
+       <%= simple_form_for @note, url: delete_note_path(@note), method: :put do |f| %>
+         <%= f.button :submit, 'Delete note', class: "btn create-note-button" %>
+       <% end %>
+     <% end %>
+   </div>
+ </div>
+</body>

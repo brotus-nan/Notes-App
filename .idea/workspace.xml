@@ -5,11 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88c10b81-78c7-4cd8-856d-737f222c3aef" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/forms.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/notes/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/notes/_form.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/notes/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/notes/new.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/notes/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/notes/edit.html.erb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/notes/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/notes/show.html.erb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +157,7 @@
       <workItem from="1704882058745" duration="1303000" />
       <workItem from="1704883378211" duration="14635000" />
       <workItem from="1704963288041" duration="9094000" />
-      <workItem from="1704973785375" duration="6408000" />
+      <workItem from="1704973785375" duration="7122000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,11 @@
-<h1>Edit note</h1>
-
-<%= render "form", note: @note %>
-
+<body class="gradient-custom" style="height: 100vh">
+  <div class="container d-flex align-items-center justify-content-center h-100">
+    <div class="d-flex flex-column align-items-center gap-2">
+      <h1>Edit note</h1>
+      <%= render "form", note: @note %>
+      <%= link_to "Back", notes_path(@note), class: "btn btn-lg btn-outline-light" %>
+    </div>
+  </div>
+</body>
 
 

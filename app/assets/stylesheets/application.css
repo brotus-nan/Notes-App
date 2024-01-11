@@ -11,17 +11,18 @@
  * It is generally better to create a new file per style scope.
  *
  *= require bootstrap.min
+ *= require 'forms'
  *= require_tree .
  *= require_self
  */
 
 .gradient-custom {
     /* fallback for old browsers */
-    background: #6a11cb;
+    background: #e2a15c;
 
     /* Chrome 10-25, Safari 5.1-6 */
-    background: -webkit-linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1));
+    background: -webkit-linear-gradient(to right, rgb(231, 207, 159), rgb(224, 180, 180));
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background: linear-gradient(to right, rgba(106, 17, 203, 1), rgba(37, 117, 252, 1))
+    background: linear-gradient(to right, rgb(231, 207, 159), rgb(224, 180, 180))
 }

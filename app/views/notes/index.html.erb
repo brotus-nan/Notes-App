@@ -1,15 +1,21 @@
-<h1><%= link_to "See Notes", notes_path(show_notes: !@show_notes) %></h1>
-<h1><%= link_to "See Archived Notes", notes_path(show_archived_notes: !@show_archived_notes) %></h1>
-<h1><%= link_to "See Deleted Notes", notes_path(show_deleted_notes: !@show_deleted_notes) %></h1>
+<body style="background: beige">
+  <div class="container">
+    <div class="row d-flex gap-3">
+      <%= link_to "See Notes", notes_path(show_notes: !@show_notes), class: "btn btn-warning col" %>
+      <%= link_to "See Archived Notes", notes_path(show_archived_notes: !@show_archived_notes), class: "btn btn-warning col" %>
+      <%= link_to "See Deleted Notes", notes_path(show_deleted_notes: !@show_deleted_notes), class: "btn btn-warning col" %>
+    </div>
 
-<ul>
-  <% @notes.each do |note| %>
-    <li><%= link_to note.title, note %></li>
-  <% end %>
-</ul>
+    <ul class="d-flex flex-column align-items-center" style="list-style-position: outside; padding-left: 20px">
+      <% @notes.each do |note| %>
+        <li><%= link_to note.title, note, class: 'text-decoration-none text-secondary' %></li>
+      <% end %>
+      <%= link_to "New Note", new_note_path %>
 
+    </ul>
+  </div>
+</body>
 
-<%= link_to "New Note", new_note_path %>
 
 <%= form_tag(logout_path, method: :delete) do %>
   <button type="submit">Logout</button>

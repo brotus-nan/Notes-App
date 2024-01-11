@@ -6,11 +6,14 @@
 </button>
 
 
-<%= simple_form_for @note, url: archive_note_path(@note), method: :put do |f| %>
-  <%= f.button :submit, 'Set Status to Archived' %>
+<% unless @note.status == $valid_statuses[:archived]%>
+  <%= simple_form_for @note, url: archive_note_path(@note), method: :put do |f| %>
+    <%= f.button :submit, 'Archive Note' %>
+  <% end %>
 <% end %>
 
-<%= simple_form_for @note, url: delete_note_path(@note), method: :put do |f| %>
-  <%= f.button :submit, 'Set Status to Deleted' %>
+<% unless @note.status == $valid_statuses[:deleted]%>
+  <%= simple_form_for @note, url: delete_note_path(@note), method: :put do |f| %>
+    <%= f.button :submit, 'Delete note' %>
+  <% end %>
 <% end %>
-

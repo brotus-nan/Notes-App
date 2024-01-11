@@ -9,8 +9,7 @@ class NotesController < ApplicationController
     conditions << { status: $valid_statuses[:active] } if @show_notes
     conditions << { status: $valid_statuses[:archived] } if @show_archived_notes
     conditions << { status: $valid_statuses[:deleted] } if @show_deleted_notes
-
-    @notes = conditions.empty? ? Note.none : Note.where(conditions.reduce(:or))
+    @notes = conditions.empty? ? Note.none : Note.where(conditions.reduce(:or)).where(user_id: Current.user.id)
 
   end
 
@@ -20,7 +19,6 @@ class NotesController < ApplicationController
 
   def new
     @note = Note.new
-    @users = User.all
   end
 
   def create

@@ -1,4 +1,5 @@
 class NotesController < ApplicationController
+  before_action :require_login
   def index
     @show_notes = params[:show_notes] == "true"
     @show_archived_notes = params[:show_archived_notes] == "true"
@@ -66,5 +67,12 @@ class NotesController < ApplicationController
   private
   def note_params
     params.require(:note).permit(:title, :content, :user_id)
+  end
+
+  def require_login
+    unless is_logged?
+      flash[:alert] = "You must be logged in to access this page."
+      redirect_to login_path
+    end
   end
 end

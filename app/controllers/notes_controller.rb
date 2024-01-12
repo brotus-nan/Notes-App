@@ -71,7 +71,6 @@ class NotesController < ApplicationController
 
   def require_login
     unless is_logged?
-      flash[:alert] = "You must be logged in to access this page."
       redirect_to login_path
     end
   end

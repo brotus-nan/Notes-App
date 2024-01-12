@@ -1,6 +1,8 @@
 version: '3'
+
 services:
   db:
+
     image: postgres
     volumes:
       - ./tmp/db:/var/lib/postgresql/data
@@ -8,6 +10,7 @@ services:
       POSTGRES_DB: notes_app_development
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
+
   web:
     build: .
     command: bundle exec puma -C config/puma.rb

@@ -11,12 +11,7 @@ development:
   database: notes_app_development
   username: admin
   password: admin
-  host: localhost
-  # The specified database role being used to connect to PostgreSQL.
-  # To create additional roles in PostgreSQL see `$ createuser --help`.
-  # When left blank, PostgreSQL will use the default role. This is
-  # the same name as the operating system user running Rails.
-  #username: notes_app
+  host: db
 
 test:
   <<: *default

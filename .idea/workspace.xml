@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88c10b81-78c7-4cd8-856d-737f222c3aef" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/entrypoint.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/notes.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/notes.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,6 +160,7 @@
       <workItem from="1704963288041" duration="9094000" />
       <workItem from="1704973785375" duration="9127000" />
       <workItem from="1705051020416" duration="10348000" />
+      <workItem from="1705070048108" duration="215000" />
     </task>
     <servers />
   </component>

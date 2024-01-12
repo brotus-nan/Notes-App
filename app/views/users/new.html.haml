@@ -20,9 +20,9 @@
                   = form.password_field :password_confirmation, required: true, id: "typePasswordConfirmX", class: "form-control form-control-lg"
                 = form.submit "Sign Up", class: "btn btn-outline-light btn-lg px-5 mt-5"
 
-              = if flash[:alert]
-                .alert.alert-danger
-                  = flash[:alert]
+            - flash.each do |key, value|
+              .alert{ :class => "alert alert-danger alert-#{key}" }
+                %strong= value
 
             = form_tag(sign_up_path, method: :get) do
               %p.mb-0 Already have an account?

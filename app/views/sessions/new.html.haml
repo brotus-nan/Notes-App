@@ -15,9 +15,10 @@
                   = form.label :password, class: "form-label"
                   = form.password_field :password, required: true, id: "typePasswordX", class: "form-control form-control-lg"
                 = form.submit "Sign in", class: "btn btn-outline-light btn-lg px-5 mt-5"
-              = if flash[:alert]
-                .alert.alert-danger
-                  = flash[:alert]
+            - flash.each do |key, value|
+              .alert{ :class => "alert alert-danger alert-#{key}" }
+                %strong= value
+
             = form_tag(sign_up_path, method: :get) do
               %p.mb-0 Don't have an account?
               %a.text-white-50.fw-bold.link-underline-opacity-0.link-primary{href: "sign_up"}Sign Up

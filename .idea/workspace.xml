@@ -5,10 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88c10b81-78c7-4cd8-856d-737f222c3aef" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/notes.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/assets/stylesheets/paginator.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/views/static_pages/home.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Notes-App.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Notes-App.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/views/notes/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/notes/show.html.erb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/credentials.yml.enc" beforeDir="false" afterPath="$PROJECT_DIR$/config/credentials.yml.enc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gemfile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/Gemfile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/controllers/notes_controller.rb" beforeDir="false" afterPath="$PROJECT_DIR$/app/controllers/notes_controller.rb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/javascript/application.js" beforeDir="false" afterPath="$PROJECT_DIR$/app/javascript/application.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/mailer.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/layouts/mailer.text.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/layouts/mailer.text.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/notes/_form.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/notes/_form.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/notes/edit.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/notes/edit.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/notes/index.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/notes/index.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/notes/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/notes/new.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/notes/show.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/notes/show.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/sessions/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/sessions/new.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/shared/_form_errors.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/shared/_form_errors.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/static_pages/home.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/index.html.erb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/views/users/new.html.erb" beforeDir="false" afterPath="$PROJECT_DIR$/app/views/users/new.html.haml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.yml" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +74,7 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "ruby.structure.view.model.defaults.configured": "true",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "reference.settingsdialog.IDE.editor.colors.Angular Template",
     "vue.rearranger.settings.migration": "true"
   },
@@ -159,6 +181,7 @@
       <workItem from="1704883378211" duration="14635000" />
       <workItem from="1704963288041" duration="9094000" />
       <workItem from="1704973785375" duration="9127000" />
+      <workItem from="1705051020416" duration="10348000" />
     </task>
     <servers />
   </component>

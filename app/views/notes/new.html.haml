@@ -1,0 +1,8 @@
+%body.gradient-custom{style: "height: 100vh"}
+  .container.d-flex.align-items-center.justify-content-center.h-100
+    .d-flex.flex-column.align-items-center.gap-2
+      %h1 New Note
+      = render "form", note: @note
+      = link_to "Back", notes_path(@note), class: "btn btn-lg btn-outline-light"
+
+

@@ -1,0 +1,75 @@
+.pagination-container {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.pagination-container .pagination {
+    display: inline-block;
+    padding-left: 0;
+    margin: 20px 0;
+
+}
+
+.pagination-container .pagination > .page,
+.pagination-container .pagination > .next,
+.pagination-container .pagination > .last,
+.pagination-container .pagination > .first,
+.pagination-container .pagination > .prev {
+    display: inline;
+    cursor: pointer;
+}
+
+.pagination-container .pagination > .page,
+.pagination-container .pagination > .next,
+.pagination-container .pagination > .last,
+.pagination-container .pagination > .first,
+.pagination-container .pagination > .prev {
+    padding: 6px 12px;
+    margin-left: -1px;
+    line-height: 1.42857143;
+    color: #8c7051; /* A color that complements the buttons */
+    text-decoration: none;
+    background-color: #fdf6e3; /* A lighter shade similar to the note cards */
+    border: 1px solid #f7e1b5; /* A border color that matches the lighter areas */
+}
+
+.pagination-container .pagination > .page.current {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #ffc107; /* A stronger color to indicate the active page */
+    border-color: #ffc107;
+    text-decoration: none;
+}
+
+.pagination-container .pagination > .page.current:hover {
+    background-color: #ffc107; /* Maintain the same color on hover for the active page */
+    border-color: #ffc107;
+    text-decoration: none;
+}
+
+.pagination-container .pagination > .disabled {
+    color: #947252; /* A muted color for disabled links */
+    cursor: not-allowed;
+    background-color: #fdf6e3;
+    border-color: #f7e1b5;
+}
+
+/* Ensure that the clickable areas are not too close to each other */
+.pagination-container .pagination > .page,
+.pagination-container .pagination > .next,
+.pagination-container .pagination > .last,
+.pagination-container .pagination > .first,
+.pagination-container .pagination > .prev{
+    margin-right: 5px; /* Add space between elements */
+    background-color: #f7e1b5;
+}
+
+.pagination-container .pagination > .page > a,
+.pagination-container .pagination > .next > a,
+.pagination-container .pagination > .last > a,
+.pagination-container .pagination > .first > a,
+.pagination-container .pagination > .prev > a{
+    text-decoration: none;
+    color: black;
+}

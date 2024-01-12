@@ -1,0 +1,29 @@
+%section.vh-100.gradient-custom
+  .container.py-5.h-100
+    .row.d-flex.justify-content-center.align-items-center.h-100
+      .col-12.col-md-8.col-lg-6.col-xl-5
+        .card.bg-dark.text-white{style: "border-radius: 1rem;"}
+          .card-body.p-5.text-center
+            .mb-md-5.mt-md-4.pb-5
+              %h2.fw-bold.mb-2.text-uppercase Register
+              %p.text-white-50.mb-5 Fill out the form below to create an account!
+              = form_with model: @user, url: sign_up_path do |form|
+                = render partial: "shared/form_errors", locals: { object: form.object }
+                %div
+                  = form.label :email, class: "form-label"
+                  = form.email_field :email, required: true, id: "typeEmailX", class: "form-control form-control-lg"
+                %div
+                  = form.label :password, class: "form-label"
+                  = form.password_field :password, required: true, id: "typePasswordX", class: "form-control form-control-lg"
+                %div
+                  = form.label :password_confirmation, class: "form-label"
+                  = form.password_field :password_confirmation, required: true, id: "typePasswordConfirmX", class: "form-control form-control-lg"
+                = form.submit "Sign Up", class: "btn btn-outline-light btn-lg px-5 mt-5"
+
+              = if flash[:alert]
+                .alert.alert-danger
+                  = flash[:alert]
+
+            = form_tag(sign_up_path, method: :get) do
+              %p.mb-0 Already have an account?
+              %a.text-white-50.fw-bold.link-underline-opacity-0.link-primary{href: "login"}  Login

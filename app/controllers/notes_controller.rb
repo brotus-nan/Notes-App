@@ -9,7 +9,8 @@ class NotesController < ApplicationController
     conditions << { status: $valid_statuses[:active] } if @show_notes
     conditions << { status: $valid_statuses[:archived] } if @show_archived_notes
     conditions << { status: $valid_statuses[:deleted] } if @show_deleted_notes
-    @notes = conditions.empty? ? Note.none : Note.where(conditions.reduce(:or)).where(user_id: Current.user.id)
+    @notes = conditions.empty? ? Note.none.page(params[:page]).per(15)
+               : Note.where(conditions.reduce(:or)).where(user_id: Current.user.id).page(params[:page]).per(15)
 
   end
 

@@ -36,7 +36,8 @@ gem "bootsnap", require: false
 
 gem 'authlogic'
 gem 'simple_form'
-
+gem 'haml'
+gem 'kaminari'
 
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ]

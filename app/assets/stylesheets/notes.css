@@ -2,10 +2,12 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    width:100px;
 }
 
 .note-description {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    width:100px;
 }
